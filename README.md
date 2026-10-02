@@ -1,19 +1,21 @@
-# 조교급여대장 (Payroll Manager)
+[![English](https://img.shields.io/badge/README-English-24292f?style=for-the-badge)](./README.md) [![한국어](https://img.shields.io/badge/README-%ED%95%9C%EA%B5%AD%EC%96%B4-24292f?style=for-the-badge)](./README.ko.md)
 
-학원 조교/강사의 출퇴근 기록을 바탕으로 주휴수당, 야간·공휴가산수당, 세금(3.3% 프리랜서 / 4대보험 / 커스텀)을 자동 계산하고, 임금명세서와 급여대장 엑셀 파일을 생성하는 급여 관리 웹앱입니다.
+# Payroll Manager
 
-## 주요 기능
+A payroll management web app for academies that calculates weekly holiday allowance, night/holiday premiums, and taxes from assistant/instructor attendance records, and generates wage statements and Excel payroll workbooks.
 
-- 직원(조교) 정보 및 근무 스케줄 관리
-- 출퇴근 기록 파일(xlsx/csv) 업로드 및 자동 파싱
-- 주휴수당 / 야간근로수당 / 공휴가산수당 / 유급연차수당 자동 계산
-- 3.3% 프리랜서, 4대보험, 커스텀 세율 정산 지원
-- 임금명세서 인쇄 및 PDF 저장
-- **엑셀(.xlsx) 급여대장 내보내기** — 대시보드, 급여대장, 직원별 상세명세, 근태기록까지 포함된 서식 있는 다중 시트 워크북
+## Features
 
-## 기술 스택
+- Manage employee/assistant information and work schedules
+- Upload and automatically parse attendance files (xlsx/csv)
+- Automatically calculate weekly holiday allowance, night-work premium, holiday-work premium, and paid annual-leave allowance
+- Support 3.3% freelancer withholding, four major insurance schemes, and custom tax rates
+- Print wage statements and save them as PDF
+- **Export Excel (.xlsx) payroll workbooks** with formatted sheets for dashboard, payroll ledger, employee details, and attendance records
+
+## Tech Stack
 
 - React 19 + TypeScript + Vite
 - Tailwind CSS
-- xlsx-js-style (출퇴근 파일 파싱 및 서식 있는 엑셀 급여대장 생성)
-- date-fns, framer motion(Motion), lucide-react
+- xlsx-js-style (attendance parsing and formatted Excel payroll export)
+- date-fns, framer motion (Motion), lucide-react
